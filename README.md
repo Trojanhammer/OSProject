@@ -889,10 +889,14 @@ mysql>
 mysql> INSERT INTO mytable (name, value) VALUES ('example1', 'value1'), ('example2', 'value2'), ('example3', 'value3');
 Query OK, 3 rows affected (0.02 sec)
 Records: 3  Duplicates: 0  Warnings: 0
+
+
+ERROR : We do not connect those containers to bridgenet
 ```
 2. Show the instruction needed to make this work. ***(1 mark)*** 
 ```bash
-
+@Trojanhammer ➜ /workspaces/OSProject/nodejs-app (main) $ docker network connect bridgenet mysql-container
+@Trojanhammer ➜ /workspaces/OSProject/nodejs-app (main) $ docker network connect bridgenet nodejs-container
 ```
 
 
