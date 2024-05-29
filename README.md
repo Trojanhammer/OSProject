@@ -874,9 +874,6 @@ Query OK, 1 row affected (0.03 sec)
 
 mysql> USE mydatabase;
 Database changed
-mysql> USE mydatabase; -- Replace "mydatabase" with the name of your database
-Database changed
-mysql> 
 mysql> CREATE TABLE mytable (
     ->   id INT AUTO_INCREMENT PRIMARY KEY,
     ->   name VARCHAR(255) NOT NULL,
@@ -885,7 +882,6 @@ mysql> CREATE TABLE mytable (
 RT INTO mytable (name, value) VALUES ('example1', 'value1'), ('example2', 'value2'), ('example3', 'value3');
 Query OK, 0 rows affected (0.13 sec)
 
-mysql> 
 mysql> INSERT INTO mytable (name, value) VALUES ('example1', 'value1'), ('example2', 'value2'), ('example3', 'value3');
 Query OK, 3 rows affected (0.02 sec)
 Records: 3  Duplicates: 0  Warnings: 0
