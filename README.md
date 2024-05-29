@@ -24,8 +24,14 @@ Team Mates:
 
 ***Questions:***
 
-1. What is the link of the fork OSProject in your repository. ***(1 mark)*** https://github.com/Trojanhammer/OSProject.
-2. How many files and folders are in this repository. ***(1 mark)*** 1 Folder with 6 files and 1 files outside the folder.
+1. What is the link of the fork OSProject in your repository. ***(1 mark)*** 
+```bash
+https://github.com/Trojanhammer/OSProject.
+```
+2. How many files and folders are in this repository. ***(1 mark)*** 
+```bash
+1 Folder with 6 files and 1 files outside the folder.
+```
 
 
 ## Exploring github codespaces
@@ -57,9 +63,18 @@ Team Mates:
 
 ***Questions:***
 
-1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** Ubuntu Linux.
-2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** 1. 8 GB RAM, and 32 GB storage 2.64 GB RAM, and 128 GB storage.
-3. Why must we commit and sync our current work on source control? ***(1 mark)*** Make sure our changes is saved to the main repository.
+1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)***
+```bash
+Ubuntu Linux.
+```
+2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)***
+```bash
+1. 8 GB RAM, and 32 GB storage 2.64 GB RAM, and 128 GB storage.
+ ```
+3. Why must we commit and sync our current work on source control? ***(1 mark)***
+```bash
+Make sure our changes is saved to the main repository.
+```
 
 ## Exploring the Terminal
 
@@ -414,8 +429,14 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 
 ***Questions:***
 
-1. Are files in the container persistent. Why not?. ***(1 mark)*** __Fill answer here__.
-2. Can we run two, or three instances of debian linux? . ***(1 mark)*** __Fill answer here__.
+1. Are files in the container persistent. Why not?. ***(1 mark)***
+```bash
+No, files in the container are not persistent by default. This is because containers are designed to be temporary and stateless.
+```
+2. Can we run two, or three instances of debian linux? . ***(1 mark)***
+```bash
+Yes, we can run multiple instances of Debian Linux using Docker. Each instance of a Debian container operates independently and in isolation from the others.
+```
 
 ## Running your own container with persistent storage
 
@@ -434,14 +455,26 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 
 ***Questions:***
 
-1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** __Fill answer here__.
+1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)***
+```bash
+@Trojanhammer ➜ /workspaces/OSProject/myroot (main) $ ls -l /workspaces/OSProject/myroot
+total 4
+-rw-rw-rw- 1 root root 21 May 29 06:50 testfile.txt
+User :root Group:root
+```
 2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
 ```bash
 //use sudo and chown
 sudo chown -R codespace:codespace myroot
 
 ```
-*** __Fill answer here__.***
+```bash
+Yes, we can change the permission to user codespace instead of root.
+@Trojanhammer ➜ /workspaces/OSProject/myroot (main) $ sudo chown -R codespace:codespace /workspaces/OSProject/myroot
+@Trojanhammer ➜ /workspaces/OSProject/myroot (main) $ ls -l
+total 4
+-rw-rw-rw- 1 codespace codespace 21 May 29 06:50 testfile.txt
+```
 
 ## You are on your own, create your own static webpage
 
@@ -459,17 +492,36 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
  <img src="./images/websitelink.png" width="70%">
 
 
+
 5. You can also see the Port in the **PORTS** tab, next to the terminal tab.
 
 6. You can then access your website by adding an index.html towards the end of your url link, like the one below. 
 
  <img src="./images/helloworldweb.png" width="70%">
+ 
+ MY WEBSITE :
+
+ <img src="/workspaces/OSProject/images/Screenshot 2024-05-29 150820.png" width="70%">
+ 
 
 ***Questions:***
 
-1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** __Fill answer here__.
-2. What port is the apache web server running. ***(1 mark)*** __Fill answer here__.
-3. What port is open for http protocol on the host machine? ***(1 mark)*** __Fill answer here__.
+1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)***
+ ```bash
+root@66b277e083b9:/usr/local/apache2# ls -ld /usr/local/apache2/htdocs
+drwxrwxrwx+ 2 1000 1000 4096 May 29 07:04 /usr/local/apache2/htdocs
+Permissions: drwxrwxrwx+
+User ID: 1000
+Group ID: 1000
+```
+2. What port is the apache web server running. ***(1 mark)***
+```bash
+Port 80
+```
+3. What port is open for http protocol on the host machine? ***(1 mark)***
+```bash
+Port 8080
+```
 
 ## Create SUB Networks
 
@@ -488,11 +540,37 @@ docker run -itd --net rednet --name c2 busybox sh
 ```
 ***Questions:***
 
-1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** __Fill answer here__.
-2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)*** __Fill answer here__.
-3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)*** __Fill answer here__.
-4. What is the network address for the running container c1 and c2? ***(1 mark)*** __Fill answer here__.
-5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
+1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** 
+```bash
+Busybox : Software suite that provides several Unix utilities in a single executable file.
+--name : Assign a specific name to a container
+```
+2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)*** 
+```bash
+@Trojanhammer ➜ /workspaces/OSProject (main) $ docker network ls
+NETWORK ID     NAME      DRIVER    SCOPE
+8d787e2d1861   bluenet   bridge    local
+c13e1cf3da74   bridge    bridge    local
+9865f8d30eae   host      host      local
+faeb84575018   none      null      local
+6c1caa036fe3   rednet    bridge    local
+```
+3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)*** 
+```bash
+Gateway Bluenet : 172.18.0.1
+Gateway Rednet : 172.19.0.1
+```
+4. What is the network address for the running container c1 and c2? ***(1 mark)*** 
+```bash
+c1 : 172.18.0.2
+c2 : 172.19.0.2
+```
+5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)*** 
+```bash
+No
+@Trojanhammer ➜ /workspaces/OSProject (main) $ docker exec c1 ping c2
+ping: bad address 'c2'
+```
 
 ## Bridging two SUB Networks
 1. Let's try this again by creating a network to bridge the two containers in the two subnetworks
@@ -504,8 +582,26 @@ docker exec c1 ping c2
 ```
 ***Questions:***
 
-1. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
-2. What is different from the previous ping in the section above? ***(1 mark)*** __Fill answer here__.
+1. Are you able to ping? Show your output . ***(1 mark)*** 
+```bash
+Yes
+@Trojanhammer ➜ /workspaces/OSProject (main) $ docker exec c1 ping c2
+PING c2 (172.20.0.3): 56 data bytes
+64 bytes from 172.20.0.3: seq=0 ttl=64 time=0.075 ms
+64 bytes from 172.20.0.3: seq=1 ttl=64 time=0.078 ms
+64 bytes from 172.20.0.3: seq=2 ttl=64 time=0.061 ms
+64 bytes from 172.20.0.3: seq=3 ttl=64 time=0.114 ms
+64 bytes from 172.20.0.3: seq=4 ttl=64 time=0.078 ms
+64 bytes from 172.20.0.3: seq=5 ttl=64 time=0.077 ms
+64 bytes from 172.20.0.3: seq=6 ttl=64 time=0.082 ms
+64 bytes from 172.20.0.3: seq=7 ttl=64 time=0.078 ms
+64 bytes from 172.20.0.3: seq=8 ttl=64 time=0.076 ms
+64 bytes from 172.20.0.3: seq=9 ttl=64 time=0.077 ms
+```
+2. What is different from the previous ping in the section above? ***(1 mark)*** 
+```bash
+The difference from the previous ping attempt in the section above is the successful connection of containers c1 and c2 to the bridgenet network. In the previous attempt, the containers were not connected to the same network, which resulted in the inability to ping c2 from c1. 
+```
 
 ## Intermediate Level (10 marks bonus)
 
