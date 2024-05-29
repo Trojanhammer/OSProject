@@ -7,7 +7,7 @@ Section: 2.
 Team Mates:
 1. MUHAMMAD RIDHWAN IRFAN BIN NUR RASHID 2214963
 2. MUHAMMAD IZZMIR DANISH BIN ZULKIFLI 2211319
-3. 
+3. MUHAMMAD ADIB ARHAM BIN HAMIDI 2212423
 
 ## Rules
 1. You are allowed to have **3 group** members. *Exception* is allowed **IFF (if and only if)** you are allowed to have 4 group members if you are a **multinational** or a **multigender** group. 
@@ -25,7 +25,7 @@ Team Mates:
 ***Questions:***
 
 1. What is the link of the fork OSProject in your repository. ***(1 mark)*** https://github.com/Trojanhammer/OSProject.
-2. How many files and folders are in this repository. ***(1 mark)*** __Fill answer here__.
+2. How many files and folders are in this repository. ***(1 mark)*** 1 Folder with 6 files and 1 files outside the folder.
 
 
 ## Exploring github codespaces
@@ -325,12 +325,22 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6112.3 avail Mem
 Linux codespaces-6785cb 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
 ```
 11. What is the available free memory in the system. ***(1 mark)*** 
-12. What is the available disk space mounted on /workspace. ***(1 mark)*** 
-13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** 
-14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** 
+free memory: 263Mi available memory: 6.0Gi
+12. What is the available disk space mounted on /workspace. ***(1 mark)***
+20807508 
+13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)***
+Linux codespaces-6785cb 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)***
+ls: Lists the contents of a directory.
+ls -asl: Lists the contents of a directory, including hidden files (-a), sizes in blocks (-s), and detailed information (-l).
 15. What is the TLB size of the Virtual CPU. ***(1 mark)*** 
-16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** 
-17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** 
+2560 4K pages
+16. What is the CPU speed of the Virtual CPU. ***(1 mark)***
+MHz         : 3234.218
+17. What is the top running process that consumes the most CPU cycles. ***(1 mark)***
+Process: node
+PID: 2150
+%CPU: 1.3
 
 ## Running your own container instance.
 
