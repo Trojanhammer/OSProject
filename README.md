@@ -7,7 +7,7 @@ Section: 2.
 Team Mates:
 1. MUHAMMAD RIDHWAN IRFAN BIN NUR RASHID 2214963
 2. MUHAMMAD IZZMIR DANISH BIN ZULKIFLI 2211319
-3. __Fill name__ and __matric no__
+3. 
 
 ## Rules
 1. You are allowed to have **3 group** members. *Exception* is allowed **IFF (if and only if)** you are allowed to have 4 group members if you are a **multinational** or a **multigender** group. 
