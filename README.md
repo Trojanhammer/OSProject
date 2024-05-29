@@ -76,11 +76,13 @@ codespace
 
 Look at the TERMINAL tab. Run the following commands and provide the output here. 
 
-1. Run the command **pwd** . ***(1 mark)***```bash 
+1. Run the command **pwd** . ***(1 mark)***
+```bash 
 @Trojanhammer ➜ /workspaces/OSProject (main) $ whoami
-codespace.
+codespace
 ```
-2. Run the command **cat /etc/passwd** . ***(1 mark)*** ```bash 
+2. Run the command **cat /etc/passwd** . ***(1 mark)*** 
+```bash 
 @Trojanhammer ➜ /workspaces/OSProject (main) $ cat /etc/passwd
 root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
@@ -107,6 +109,10 @@ systemd-resolve:x:103:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
 messagebus:x:104:105::/nonexistent:/usr/sbin/nologin
 codespace:x:1000:1000::/home/codespace:/bin/bash
 sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
+```
+
+3. Run the command **df** . ***(1 mark)*** 
+```bash
 @Trojanhammer ➜ /workspaces/OSProject (main) $ df
 Filesystem     1K-blocks     Used Available Use% Mounted on
 overlay         32847680 10346076  20807508  34% /
@@ -116,105 +122,8 @@ shm                65536        8     65528   1% /dev/shm
 /dev/sda1       46127956       96  43752284   1% /tmp
 /dev/loop3      32847680 10346076  20807508  34% /workspaces
 ```
-3. Run the command **df** . ***(1 mark)*** ```bash 
-@Trojanhammer ➜ /workspaces/OSProject (main) $ du
-8       ./.git/info
-4       ./.git/lfs/tmp
-8       ./.git/lfs
-8       ./.git/refs/heads
-12      ./.git/refs/remotes/origin
-16      ./.git/refs/remotes
-4       ./.git/refs/tags
-32      ./.git/refs
-4       ./.git/branches
-8       ./.git/logs/refs/heads
-12      ./.git/logs/refs/remotes/origin
-16      ./.git/logs/refs/remotes
-28      ./.git/logs/refs
-36      ./.git/logs
-8       ./.git/objects/04
-8       ./.git/objects/93
-8       ./.git/objects/fa
-12      ./.git/objects/ff
-12      ./.git/objects/72
-12      ./.git/objects/17
-12      ./.git/objects/b5
-8       ./.git/objects/c6
-8       ./.git/objects/4f
-8       ./.git/objects/eb
-12      ./.git/objects/3d
-8       ./.git/objects/83
-4       ./.git/objects/info
-8       ./.git/objects/71
-8       ./.git/objects/c3
-8       ./.git/objects/4b
-1828    ./.git/objects/pack
-8       ./.git/objects/f6
-8       ./.git/objects/41
-12      ./.git/objects/1c
-8       ./.git/objects/fc
-8       ./.git/objects/81
-8       ./.git/objects/60
-16      ./.git/objects/fb
-8       ./.git/objects/cb
-12      ./.git/objects/af
-8       ./.git/objects/fe
-8       ./.git/objects/07
-8       ./.git/objects/cd
-8       ./.git/objects/52
-8       ./.git/objects/a6
-8       ./.git/objects/b2
-8       ./.git/objects/1b
-8       ./.git/objects/3a
-12      ./.git/objects/6e
-8       ./.git/objects/b9
-8       ./.git/objects/66
-8       ./.git/objects/58
-8       ./.git/objects/c0
-8       ./.git/objects/be
-8       ./.git/objects/7b
-8       ./.git/objects/20
-8       ./.git/objects/3f
-8       ./.git/objects/f2
-8       ./.git/objects/f7
-8       ./.git/objects/2b
-8       ./.git/objects/e7
-8       ./.git/objects/0b
-8       ./.git/objects/24
-8       ./.git/objects/91
-12      ./.git/objects/2e
-8       ./.git/objects/49
-8       ./.git/objects/a3
-8       ./.git/objects/0d
-12      ./.git/objects/e5
-8       ./.git/objects/fd
-8       ./.git/objects/b6
-8       ./.git/objects/86
-16      ./.git/objects/70
-8       ./.git/objects/47
-12      ./.git/objects/44
-12      ./.git/objects/29
-12      ./.git/objects/73
-12      ./.git/objects/7d
-8       ./.git/objects/74
-8       ./.git/objects/d8
-16      ./.git/objects/a4
-12      ./.git/objects/62
-12      ./.git/objects/bf
-12      ./.git/objects/d2
-12      ./.git/objects/14
-8       ./.git/objects/4a
-8       ./.git/objects/96
-8       ./.git/objects/ab
-8       ./.git/objects/e9
-12      ./.git/objects/64
-2528    ./.git/objects
-68      ./.git/hooks
-2720    ./.git
-1972    ./images
-4716    .
-```
-4. Run the command **du** . ***(1 mark)*** ```bash 
+4. Run the command **du** . ***(1 mark)*** 
+```bash 
 @Trojanhammer ➜ /workspaces/OSProject (main) $ du
 8       ./.git/info
 4       ./.git/lfs/tmp
@@ -312,11 +221,13 @@ shm                65536        8     65528   1% /dev/shm
 1972    ./images
 4716    .
 ```.
-5. Run the command **ls** . ***(1 mark)*** ```bash 
+5. Run the command **ls** . ***(1 mark)*** 
+```bash 
 @Trojanhammer ➜ /workspaces/OSProject (main) $ ls
 README.md  images
-```.
-6. Run the command **ls -asl** . ***(1 mark)*** ```bash 
+```
+6. Run the command **ls -asl** . ***(1 mark)*** 
+```bash 
 @Trojanhammer ➜ /workspaces/OSProject (main) $ ls -asl
 total 36
  4 drwxrwxrwx+ 4 codespace root  4096 May 29 04:20 .
@@ -325,13 +236,15 @@ total 36
 20 -rw-rw-rw-  1 codespace root 17503 May 29 04:29 README.md
  4 drwxrwxrwx+ 2 codespace root  4096 May 29 04:20 images
 ```.
-7. Run the command **free -h** . ***(1 mark)*** ```bash 
+7. Run the command **free -h** . ***(1 mark)*** 
+```bash 
 @Trojanhammer ➜ /workspaces/OSProject (main) $ free -h
               total        used        free      shared  buff/cache   available
 Mem:          7.7Gi       1.4Gi       263Mi       1.0Mi       6.1Gi       6.0Gi
 Swap:            0B          0B          0B
 ```.
-8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** ```bash 
+8. Run the command **cat /proc/cpuinfo** . ***(1 mark)***
+```bash 
 @Trojanhammer ➜ /workspaces/OSProject (main) $ cat /proc/cpuinfo
 processor       : 0
 vendor_id       : AuthenticAMD
@@ -360,36 +273,10 @@ clflush size    : 64
 cache_alignment : 64
 address sizes   : 48 bits physical, 48 bits virtual
 power management:
+```
 
-processor       : 1
-vendor_id       : AuthenticAMD
-cpu family      : 25
-model           : 1
-model name      : AMD EPYC 7763 64-Core Processor
-stepping        : 1
-microcode       : 0xffffffff
-cpu MHz         : 3237.107
-cache size      : 512 KB
-physical id     : 0
-siblings        : 2
-core id         : 0
-cpu cores       : 1
-apicid          : 1
-initial apicid  : 1
-fpu             : yes
-fpu_exception   : yes
-cpuid level     : 13
-wp              : yes
-flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext invpcid_single vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload umip vaes vpclmulqdq rdpid fsrm
-bugs            : sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass srso
-bogomips        : 4890.86
-TLB size        : 2560 4K pages
-clflush size    : 64
-cache_alignment : 64
-address sizes   : 48 bits physical, 48 bits virtual
-power management:
-```_.
-9. Run the command **top** and type **q** to quit. ***(1 mark)***   ```bash 
+9. Run the command **top** and type **q** to quit. ***(1 mark)***
+```bash 
 @Trojanhammer ➜ /workspaces/OSProject (main) $ top
 processor       : 1
 vendor_id       : AuthenticAMD
@@ -431,11 +318,12 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6112.3 avail Mem
    3784 codespa+  20   0    2616   1536   1536 S   0.0   0.0   0:00.00 sh                                                                                     
    3831 root      20   0    2616   1408   1408 S   0.0   0.0   0:00.00 sh                                                                                     
    4052 codespa+  20   0   16628  11392   3328 S   0.0   0.1   0:00.14 bash  
-```.
-10. Run the command **uname -a**. ***(1 mark)*** ```bash 
+```
+10. Run the command **uname -a**. ***(1 mark)*** 
+```bash 
 @Trojanhammer ➜ /workspaces/OSProject (main) $ uname -a
 Linux codespaces-6785cb 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
-```.
+```
 11. What is the available free memory in the system. ***(1 mark)*** 
 12. What is the available disk space mounted on /workspace. ***(1 mark)*** 
 13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** 
