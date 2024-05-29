@@ -443,7 +443,6 @@ Linux codespaces-6785cb 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08
 15. What is the TLB size of the Virtual CPU. ***(1 mark)*** 
 16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** 
 17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** 
-.
 
 ## Running your own container instance.
 
